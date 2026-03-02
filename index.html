@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dictator TTS — Free Voice Dictation for Linux</title>
+  <meta name="description" content="Dictator is a free, offline, always-on-top voice dictation overlay for Linux. Powered by OpenAI Whisper. No cloud, no subscription required." />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #0f0f1a;
+      color: #cccccc;
+      font-family: 'Segoe UI', Ubuntu, sans-serif;
+      line-height: 1.7;
+    }
+    header {
+      background: #1a1a2e;
+      border-bottom: 1px solid #2a2a44;
+      padding: 32px 24px;
+      text-align: center;
+    }
+    header h1 { color: #4da6ff; font-size: 2.4rem; letter-spacing: 1px; }
+    header p  { color: #888899; margin-top: 8px; font-size: 1.05rem; }
+    .badge {
+      display: inline-block;
+      background: #2a2a44;
+      color: #4da6ff;
+      border-radius: 4px;
+      padding: 2px 10px;
+      font-size: 0.8rem;
+      margin: 4px 2px;
+    }
+    main { max-width: 860px; margin: 0 auto; padding: 40px 24px; }
+    h2 { color: #4da6ff; margin: 32px 0 12px; font-size: 1.3rem; }
+    ul { padding-left: 20px; }
+    li { margin-bottom: 6px; }
+    .download-btn {
+      display: inline-block;
+      margin-top: 24px;
+      background: #4da6ff;
+      color: #0f0f1a;
+      padding: 14px 32px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.05rem;
+    }
+    .download-btn:hover { background: #70b8ff; }
+    .specs {
+      background: #1a1a2e;
+      border: 1px solid #2a2a44;
+      border-radius: 6px;
+      padding: 20px 24px;
+      margin-top: 16px;
+    }
+    .specs table { width: 100%; border-collapse: collapse; }
+    .specs td { padding: 6px 12px; border-bottom: 1px solid #2a2a44; }
+    .specs td:first-child { color: #888899; width: 40%; }
+    footer {
+      text-align: center;
+      padding: 32px;
+      color: #555566;
+      font-size: 0.85rem;
+      border-top: 1px solid #2a2a44;
+      margin-top: 60px;
+    }
+    a { color: #4da6ff; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>🎙 Dictator TTS</h1>
+  <p>Free, offline, always-on-top voice dictation overlay for Linux</p>
+  <div style="margin-top:12px">
+    <span class="badge">Linux</span>
+    <span class="badge">X11</span>
+    <span class="badge">Whisper AI</span>
+    <span class="badge">100% Offline</span>
+    <span class="badge">Open Source</span>
+  </div>
+</header>
+
+<main>
+
+  <h2>What is Dictator?</h2>
+  <p>
+    Dictator is a lightweight, always-on-top microphone overlay for Linux desktops.
+    Press a hotkey, speak, and your words are typed anywhere — any application, any text field.
+    All transcription happens locally using <strong>OpenAI Whisper</strong> — nothing ever leaves your machine.
+  </p>
+
+  <a class="download-btn" href="https://github.com/DictatorTTS">⬇ Download on GitHub</a>
+
+  <h2>Features</h2>
+  <ul>
+    <li>Instant one-key push-to-talk overlay</li>
+    <li>Local Whisper AI transcription — no internet required</li>
+    <li>Vocabulary editor — teach it words and phrases it mishears</li>
+    <li>Draggable, always-on-top 60×60 px overlay widget</li>
+    <li>Dark-themed settings panel</li>
+    <li>Punctuation control (speak or strip automatically)</li>
+    <li>Scales correctly at any DPI / display scaling</li>
+  </ul>
+
+  <h2>System Requirements</h2>
+  <div class="specs">
+    <table>
+      <tr><td>Operating System</td><td>Linux (X11)</td></tr>
+      <tr><td>CPU</td><td>6-core x86_64 minimum (8-core recommended)</td></tr>
+      <tr><td>RAM</td><td>4 GB free (8 GB recommended)</td></tr>
+      <tr><td>Disk</td><td>~600 MB</td></tr>
+      <tr><td>Python</td><td>3.10+</td></tr>
+      <tr><td>GPU</td><td>Optional (ROCm / CUDA accelerates transcription)</td></tr>
+    </table>
+  </div>
+
+  <h2>Privacy</h2>
+  <p>
+    Dictator processes all audio locally. No audio, text, or usage data is ever transmitted
+    to any server. Your words stay on your machine.
+  </p>
+
+</main>
+
+<footer>
+  &copy; 2026 Dictator TTS &mdash; Free version supported by ads &mdash;
+  <a href="https://github.com/DictatorTTS">GitHub</a>
+</footer>
+
+</body>
+</html>
